@@ -1,5 +1,50 @@
+baseURL = "https://github.com/StubbyGuy/StubbyGuy.github.io"  # Adjust for your repo
+languageCode = "en-us"
+title = "Eric Somogyi - Cloud Engineer Portfolio"
+theme = "careercanvas"
+
 [module]
   [module.hugoVersion]
     extended = true
     min = "0.147.1"
     max = "" 
+
+[params]
+  name = "Eric Somogyi"
+  tagline = "Cloud Engineer"
+  location = "Willing to Relocate"
+  email = "rahdt@protonmail.com"
+  profile_image = "/images/profile.jpg"  # Upload your image to static/images/
+  description = "Cloud Engineer specializing in AWS, Kubernetes, and CI/CD pipelines"
+  author = "Eric Somogyi"
+  # Social Media
+  linkedin_url = "https://www.linkedin.com/in/ericsomogyi"
+  github_url = "https://github.com/StubbyGuy"
+  # Resume/CV
+  resume_url_en = "/files/resume.pdf"  # Upload your resume to static/files/
+  # resume_url_fr = "/files/your-resume-fr.pdf"  # Remove or comment out if not used
+  resume_label = "Full Resume"
+  # Social Icons
+  [[params.social]]
+    icon = "linkedin-in"
+    url = "https://www.linkedin.com/in/ericsomogyi"
+  [[params.social]]
+    icon = "github"
+    url = "https://github.com/StubbyGuy"
+
+[[menu.main]]
+  name = "About"
+  url = "/#about"  # Verify if single-page or change to "/about/"
+  weight = 2
+[[menu.main]]
+  name = "Skills"
+  url = "/#skills"
+  weight = 3
+[[menu.main]]
+  name = "Experience"
+  url = "/#experience"
+  weight = 4
+[[menu.main]]
+  name = "Contact"
+  url = "/#contact"
+  weight = 5
